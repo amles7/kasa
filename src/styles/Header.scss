@@ -1,28 +1,29 @@
+@import "../styles/variables\ .scss";
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 55px;
-  background-color: white;
-}
+  @include flex-between; 
+  padding: 30px 50px;
+  background-color: $third-color; 
 
-.img_link img {
-  width: 210.32px;
-  height: 68px;
-}
+  img {
+    width: 210.32px;
+    height: 68px;
+  }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
+  ul {
+    list-style-type: none;
+    @include flex-start; 
+    gap: 20px;
 
-ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
+    li {
+      a {
+        text-decoration: none;
+        color: $text-color; 
+        font-size: $font-size-title; 
 
-ul li a.active {
-  text-decoration: underline;
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

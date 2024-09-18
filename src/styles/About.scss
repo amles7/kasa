@@ -1,12 +1,57 @@
+@import "../styles/variables\ .scss";
 .about img {
   margin: auto;
   width: 94%;
   height: 223px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center-center;
   background-size: cover;
   background-position: center;
-  border-radius: 25px;
+  @include radius-25;
   background-color: rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  @include phone {
+    height: 111px;
+  }
 }
+.collapse {
+  margin-bottom: 20px;
+
+  .collapse-header {
+    margin: auto;
+    background-color: $primary-color;
+    color: $third-color;
+    width: 85%;
+    height: 20px;
+    @include flex-between; 
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    font-family: $font-primary;
+
+    h2 {
+      font-size: $font-size-title;
+      font-family: $font-primary;
+    }
+
+    i {
+      font-size: $font-size-title;
+    }
+  }
+
+  .collapse-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: -40px;
+    background-color: $background-color; 
+    width: 85%;
+    padding: 20px;
+    border-radius: 5px;
+    font-size:$font-size-medium;
+    font-family: $font-primary;
+  }
+  
+}
+

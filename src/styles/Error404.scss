@@ -1,0 +1,39 @@
+@import "../styles/variables\ .scss";
+.error-page {
+  @include flex-column-center; 
+  gap: 90px;
+  @include phone {
+    gap: 45px;
+  }
+
+  h1 {
+    font-size: 288px;
+    font-family: $font-primary;
+    color: $primary-color; 
+    margin-top: 20px;
+    margin-bottom: 0px;
+    @include phone {
+      font-size: 96px;
+     
+    }
+  }
+
+  p {
+    font-size: 36px;
+    font-family: $font-primary;
+    color: $primary-color; 
+    @include phone {
+      font-size: 18px;
+    }
+
+  }
+
+  a {
+    font-size: $font-size-large;
+    color: black;
+    padding-bottom: 100px;
+    @include phone {
+      font-size: 14px;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import accomodations from "../data/logements.json";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const Home = () => {
   return (
     <>
@@ -13,8 +14,14 @@ const Home = () => {
         <Banner
           background_img="../assets/background.jpg"
           title="Chez vous, partout et ailleurs"
+          titlephone ={
+            <>
+              Chez vous,<br />partout et ailleurs
+            </>
+          }
           alt="Image de fond représentant une plage"
         />
+        
         <section className="gallery">
           {accomodations.map(({ id, title, cover }) => (
             <Card key={id} id={id} title={title} cover={cover} />

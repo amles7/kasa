@@ -6,7 +6,7 @@ function Collapse({ title, content }) {
   return (
     <div className="collapse">
       <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <span>
           {isOpen ? (
             <i className="fa-solid fa-chevron-down"></i>
