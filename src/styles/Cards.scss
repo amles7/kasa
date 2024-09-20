@@ -1,23 +1,22 @@
 @import "../styles/variables\ .scss";
 .gallery {
-  width: 94%; 
-  margin: 0 auto; 
+  width: 94%;
+  margin: 0 auto;
   background-color: $background-color;
-  padding: 30px 20px; 
+  padding: 30px 20px;
   @include radius-10;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; 
-  box-sizing: border-box; 
+  gap: 10px;
+  box-sizing: border-box;
   margin-top: 30px;
   margin-bottom: 30px;
-  @include phone{
+  @include phone {
     background-color: transparent;
     padding: 0px;
     gap: 0%;
   }
 }
-
 
 .card {
   height: 340px;
@@ -28,11 +27,9 @@
   position: relative;
   @include radius-10;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  @include phone{
+  @include phone {
     width: 100%;
     padding: 0%;
-    
-    
   }
 
   &__image {
@@ -42,10 +39,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @include phone{
+    @include phone {
       width: 100%;
-      
-      
     }
   }
 
@@ -61,4 +56,3 @@
     color: $third-color;
   }
 }
-

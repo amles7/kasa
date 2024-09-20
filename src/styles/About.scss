@@ -22,7 +22,7 @@
     color: $third-color;
     width: 85%;
     height: 20px;
-    @include flex-between; 
+    @include flex-between;
     align-items: center;
     padding: 15px 20px;
     border-radius: 5px;
@@ -45,13 +45,11 @@
     flex-wrap: wrap;
     margin: auto;
     margin-top: -40px;
-    background-color: $background-color; 
+    background-color: $background-color;
     width: 85%;
     padding: 20px;
     border-radius: 5px;
-    font-size:$font-size-medium;
+    font-size: $font-size-medium;
     font-family: $font-primary;
   }
-  
 }
-

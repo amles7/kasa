@@ -1,8 +1,8 @@
 @import "../styles/variables\ .scss";
 .navbar {
-  @include flex-between; 
+  @include flex-between;
   padding: 30px 50px;
-  background-color: $third-color; 
+  background-color: $third-color;
 
   img {
     width: 210.32px;
@@ -11,14 +11,14 @@
 
   ul {
     list-style-type: none;
-    @include flex-start; 
+    @include flex-start;
     gap: 20px;
 
     li {
       a {
         text-decoration: none;
-        color: $text-color; 
-        font-size: $font-size-title; 
+        color: $text-color;
+        font-size: $font-size-title;
 
         &.active {
           text-decoration: underline;

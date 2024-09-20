@@ -6,23 +6,32 @@ const Slideshow = ({ pictures }) => {
 
   // Fonction pour next image
   const nextSlide = () => {
-    setCurrentIndex(currentIndex === pictures.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(
+      currentIndex === pictures.length - 1 ? 0 : currentIndex + 1
+    );
   };
 
   // Fonction  previous image
   const prevSlide = () => {
-    setCurrentIndex(currentIndex === 0 ? pictures.length - 1 : currentIndex - 1);
+    setCurrentIndex(
+      currentIndex === 0 ? pictures.length - 1 : currentIndex - 1
+    );
   };
 
   return (
     <div className="slideshow">
-      {/* Only show arrows and counter if there are more than 1 picture */}
       {pictures.length > 1 && (
         <>
-          <div className="slideshow__arrow slideshow__arrow--left" onClick={prevSlide}>
+          <div
+            className="slideshow__arrow slideshow__arrow--left"
+            onClick={prevSlide}
+          >
             <i className="fa-solid fa-chevron-left"></i>
           </div>
-          <div className="slideshow__arrow slideshow__arrow--right" onClick={nextSlide}>
+          <div
+            className="slideshow__arrow slideshow__arrow--right"
+            onClick={nextSlide}
+          >
             <i className="fa-solid fa-chevron-right"></i>
           </div>
           <div className="slideshow__counter">

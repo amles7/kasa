@@ -14,7 +14,8 @@ const PropertyDetails = ({ match }) => {
   if (!property) {
     return <Error404 />;
   }
-  const { title, location, tags, host, rating, description, equipments } = property;
+  const { title, location, tags, host, rating, description, equipments } =
+    property;
 
   return (
     <div className="property-details">
@@ -25,11 +26,10 @@ const PropertyDetails = ({ match }) => {
           <h1>{title}</h1>
           <p>{location}</p>
           <div className="tags">
-        {tags.map((tag, index) => (
-          <p key={index}>{tag}</p>
-        ))}
-      </div>
-
+            {tags.map((tag, index) => (
+              <p key={index}>{tag}</p>
+            ))}
+          </div>
         </div>
         <div className="info2">
           <div className="host">
@@ -49,26 +49,22 @@ const PropertyDetails = ({ match }) => {
                 ></i>
               ))}
           </div>
-         
-        </div> 
-        
+        </div>
       </section>
       <div className="property-collapse">
-            <Collapse
-              key={description}
-              title="Description"
-              content={description}
-            />
-             <Collapse
-              key={equipments}
-              title="Équipements"
-              content={ <ul>
-          {equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        </ul>}
-            />
-          </div>
+        <Collapse key={description} title="Description" content={description} />
+        <Collapse
+          key={equipments}
+          title="Équipements"
+          content={
+            <ul>
+              {equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          }
+        />
+      </div>
       <Footer />
     </div>
   );

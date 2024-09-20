@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link ,useLocation} from 'react-router-dom';
-import logo from '../assets/kasa_red.jpg';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/kasa_red.jpg";
 import "../styles/Header.scss";
 
 const Header = () => {
@@ -13,17 +13,14 @@ const Header = () => {
         </Link>
         <ul>
           <li>
-          <Link
-              to="/"
-              className={location.pathname === '/' ? 'active' : ''}
-            >
+            <Link to="/" className={location.pathname === "/" ? "active" : ""}>
               Accueil
             </Link>
           </li>
           <li>
             <Link
               to="/about"
-              className={location.pathname === '/about' ? 'active' : ''}
+              className={location.pathname === "/about" ? "active" : ""}
             >
               À propos
             </Link>

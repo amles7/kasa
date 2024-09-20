@@ -1,9 +1,9 @@
 // Couleurs
-$primary-color: #FF6060;
-$secondary-color: #E3E3E3;
-$third-color:#FFFFFF;
-$background-color: #F7F7F7;
-$text-color:#000000;
+$primary-color: #ff6060;
+$secondary-color: #e3e3e3;
+$third-color: #ffffff;
+$background-color: #f7f7f7;
+$text-color: #000000;
 
 // Tailles de polices
 $font-size-medium: 16px;
@@ -11,54 +11,50 @@ $font-size-large: 18px;
 $font-size-title: 24px;
 $font-primary: Montserrat, sans-serif;
 
-
-// Breakpoints
-$breakpoint-mobile: 768px;
-$breakpoint-desktop: 1200px;
-//radius 
+//radius
 @mixin radius-10 {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 @mixin radius-25 {
-    border-radius: 25px;
+  border-radius: 25px;
 }
-//flex 
+//flex
 @mixin flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin flex-column-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flex-start {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 @mixin flex-between {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 @mixin flex-center-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-// telephone 
+// telephone
 @mixin phone {
-    @media (max-width: 600px) {
-        @content;
-    }
+  @media (max-width: 600px) {
+    @content;
+  }
 }
