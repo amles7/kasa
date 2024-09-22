@@ -1,6 +1,8 @@
 import React from "react";
 import background_img from "../assets/background.jpg";
+
 import "../styles/Banner.scss";
+
 
 function Banner({ title, titlephone }) {
   return (

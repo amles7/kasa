@@ -34,6 +34,7 @@ function About() {
       <Header />
       <div className="about">
         <img src={about} alt="photo de montagne" />
+      
 
         <div className="collapse-container">
           {aboutContent.map(({ title, content }, index) => (
